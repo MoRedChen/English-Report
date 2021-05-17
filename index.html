@@ -1,1 +1,498 @@
-Eric's Website!
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Eric's Website!</title>
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* 頁面顏色 */
+        
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+        body {
+            /* background-color: rgba(247, 247, 247, 1); */
+            background-color: rgba(50, 50, 50, 1);
+            font-family: 'cwTeXKai', serif;
+            font-size: 18px;
+        }
+        /* animate start */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate {
+            -moz-transition: 2s ease-in-out;
+            -webkit-transition: 2s ease-in-out;
+            transition: 2s ease-in-out;
+            -moz-animation: fadeIn ease-in 1;
+            -webkit-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+        
+        #phone.animate {
+            -webkit-transform: translate(14em, 0);
+            -moz-transform: translate(14em, 0);
+            transform: translate(14em, 0);
+        }
+        
+        #monitor.animate {
+            -webkit-transform: translate(3em, 0);
+            -moz-transform: translate(3em, 0);
+            transform: translate(3em, 0);
+        }
+        /* animate end */
+        /* ---------- navbar 相關 ------------------------- */
+        /* 整體設定 */
+        
+        .navbar-default {
+            color: #fff;
+            background-color: rgba(8, 8, 8, 1);
+            height: 50px;
+            margin-bottom: 0;
+            padding-left: 20px;
+            padding-right: 100px;
+            border-width: 0;
+            border-radius: 0;
+        }
+        
+        .navbar-default,
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:hover,
+        .navbar-default .navbar-nav>.active>a:focus {
+            color: #fff;
+            background-color: rgba(8, 8, 8, 1);
+        }
+        /* logo */
+        
+        .navbar-default .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        
+        .navbar-default .navbar-brand:hover {
+            color: #aaa;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        /* 大標題 */
+        
+        .navbar-default .navbar-nav>li>a {
+            color: rgba(180, 180, 180, 1);
+            padding-bottom: 0;
+            font-size: 16px;
+        }
+        
+        .navbar-default .navbar-right>li>a {
+            color: #fff;
+            padding-bottom: 0;
+            font-size: 16px;
+        }
+        /* 下拉選單-大標題 */
+        
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: #444;
+        }
+        /* 下拉選單-展開 */
+        
+        .dropdown-menu>li>a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            white-space: nowrap;
+            color: #fff;
+            font-size: 17px;
+        }
+        /* 下拉選單-展開 active */
+        
+        .dropdown-menu>.active>a,
+        .dropdown-menu>.active>a:hover,
+        .dropdown-menu>.active>a:focus {
+            background-color: #787878;
+            background-image: none;
+        }
+        /* -------------------------------------------------- */
+        
+        .breadcrumb {
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        
+        .breadcrumb>li>a {
+            text-decoration: none;
+        }
+        /* ---------- 內文四區塊 ------------------------- */
+        /* 整體 */
+        
+        .jumbotron p {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        /* 一 */
+        
+        .bg1 {
+            background-color: rgba(50, 50, 50, 1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 0;
+            height: 400px;
+            color: rgba(230, 230, 230, 1);
+        }
+        
+        .bg1-text {
+            background-color: rgba(8, 8, 8, 0.5);
+            padding: 50px;
+            border-radius: 100px;
+            transition: color 0.5s, background-color 2s;
+        }
+        
+        .bg1-text:hover {
+            color: rgba(8, 8, 8, 1);
+            background-color: rgba(230, 230, 230, 1);
+            font-weight: bold;
+        }
+        /* 二 */
+        
+        .bg2 {
+            background-image: url(https://picsum.photos/2800/700/?random=4);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 0;
+            height: 600px;
+            color: rgba(8, 8, 8, 1);
+            ;
+        }
+        
+        .bg2-text {
+            background-color: rgba(247, 247, 247, 0.5);
+            padding: 50px;
+            border-radius: 20px;
+        }
+        /* 三 */
+        
+        .bg3 {
+            background-color: rgba(8, 8, 8, 1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 0;
+            height: 400px;
+            color: rgba(230, 230, 230, 1);
+        }
+        
+        .bg3-text {
+            background-color: rgba(8, 8, 8, 0.5);
+            padding: 50px;
+            border-radius: 500px;
+            transition: color 0.5s, background-color 2s;
+        }
+        
+        .bg3-text:hover {
+            color: rgba(8, 8, 8, 1);
+            background-color: rgba(230, 230, 230, 1);
+        }
+        /* 四 */
+        
+        .bg4 {
+            background-image: url(https://picsum.photos/2800/700/?random=5);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 0;
+            height: 600px;
+            color: rgba(8, 8, 8, 1);
+        }
+        
+        .bg4-text {
+            background-color: rgba(247, 247, 247, 0.5);
+            padding: 50px;
+            border-radius: 20px;
+        }
+        /* -------------------------------------------------- */
+        /* ---------- footer 相關 ------------------------- */
+        /* 整體設定 */
+        
+        .page-footer {
+            background-color: rgba(8, 8, 8, 1);
+            color: rgba(255, 255, 255, .6);
+            padding: 16px 0;
+        }
+        /* 超連結 */
+        
+        .page-footer>.footer-copyright>a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /* -------------------------------------------------- */
+        
+        .btn-transparent {
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(8, 8, 8, 0.5);
+            border-color: rgba(8, 8, 8, 1);
+            transition: 0.3s;
+        }
+        
+        .btn-transparent:focus,
+        .btn-transparent:hover {
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(8, 8, 8, 0.8);
+            border-color: rgba(8, 8, 8, 1);
+        }
+        /* .btn-transparent {
+            color: rgba(8, 8, 8, 1);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-color: rgba(8, 8, 8, 1);
+        }
+        
+        .btn-transparent:focus,
+        .btn-transparent:hover {
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(8, 8, 8, 0.8);
+            border-color: rgba(8, 8, 8, 1);
+            font-weight: bold;
+        } */
+        
+        .item-one {
+            width: 100%;
+            height: 400px;
+            background-image: url(https://picsum.photos/2800/700/?random=1);
+        }
+        
+        .item-two {
+            width: 100%;
+            height: 400px;
+            background-image: url(https://picsum.photos/2800/700/?random=2);
+        }
+        
+        .item-three {
+            width: 100%;
+            height: 400px;
+            background-image: url(https://picsum.photos/2800/700/?random=3);
+        }
+        
+        .row {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- logo區 -->
+        <a href="" class="navbar-brand">Eric</a>
+
+
+    </nav>
+
+
+
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <!-- 幻燈片小圓點區 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+        </ol>
+        <!-- 幻燈片主圖區 -->
+        <div class="carousel-inner">
+            <div class="item item-one active">
+                <!-- <img src="https://picsum.photos/2800/2800/?random=1"> -->
+                <div class="container">
+                    <div class="carousel-caption animate">
+                        <h1>First page</h1>
+                        <p>This is first page~</p>
+                        <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-two">
+                <!-- <img src="https://picsum.photos/2800/700/?random=2"> -->
+                <div class="container">
+                    <div class="carousel-caption animate">
+                        <h1>Second page</h1>
+                        <p>This is second page~</p>
+                        <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-three">
+                <!-- <img src="https://picsum.photos/2800/700/?random=3"> -->
+                <div class="container">
+                    <div class="carousel-caption animate">
+                        <h1>Third page</h1>
+                        <p>This is third page~</p>
+                        <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 上下頁控制區 -->
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="jumbotron bg1 animate">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <div class="bg1-text text-center">
+                        <h1>Block one</h1>
+                        <br>
+                        <p>There will be an animation when the mouse rolls over.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row -->
+
+
+
+    <div class="row">
+        <div class="jumbotron bg2">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="bg2-text">
+                        <h1>Block two</h1>
+                        <br>
+                        <p>This block will be left on the PC version.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row -->
+
+
+
+    <div class="row">
+        <div class="jumbotron bg3">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <div class="bg3-text text-center">
+                        <h1>Block three</h1>
+                        <br>
+                        <p>There will be an animation when the mouse rolls over.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row -->
+
+
+
+    <div class="row">
+        <div class="jumbotron bg4">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+                    <div class="bg4-text">
+                        <h1>Block four</h1>
+                        <br>
+                        <p>This block will be right on the PC version.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row -->
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href=""> Eric</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var y = $(this).scrollTop();
+                // if (y > 300) {
+                //     $('#monitor').addClass('animate');
+                //     $('#phone').addClass('animate');
+                // };
+
+            });
+        });
+    </script>
+</body>
+
+</html>
